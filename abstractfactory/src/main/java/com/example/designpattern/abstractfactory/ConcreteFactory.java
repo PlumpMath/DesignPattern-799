@@ -16,7 +16,7 @@ public class ConcreteFactory {
         return SingletonHolder.instance;
     }
 
-    public ThemeFactory get(String type){
+    public IThemeFactory get(String type){
         switch (type){
             case "red":
                 return new RedThemeFactory();

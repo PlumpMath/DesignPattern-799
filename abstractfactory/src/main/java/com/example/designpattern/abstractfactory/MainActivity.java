@@ -14,7 +14,7 @@ public class MainActivity extends ActionBarActivity  implements View.OnClickList
     private Button mBtRed;
     private Button mBtBlue;
     private ListView mListView;
-    private ThemeFactory mTheme;
+    private IThemeFactory mTheme;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
