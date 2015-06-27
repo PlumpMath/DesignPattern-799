@@ -11,7 +11,7 @@ import com.example.designpattern.abstractfactory.IThemeFactory;
 public class BlueThemeFactory implements IThemeFactory {
     @Override
     public IBackgroundColor getBackgroundColor() {
-        return new BackgroundBuleColor();
+        return new BackgroundBlueColor();
     }
 
     @Override
