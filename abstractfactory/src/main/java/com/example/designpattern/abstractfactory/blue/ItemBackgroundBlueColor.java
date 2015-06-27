@@ -5,7 +5,7 @@ import android.graphics.Color;
 import com.example.designpattern.abstractfactory.IItemBackgroundColor;
 
 /**
- * 蓝色
+ * 蓝色项背景
  */
 public class ItemBackgroundBlueColor implements IItemBackgroundColor {
     @Override
