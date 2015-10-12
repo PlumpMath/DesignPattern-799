@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">builder</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="text">纯文本</string>
+    <string name="style_text">带样式文本</string>
+    <string name="tree">属性树</string>
+</resources>

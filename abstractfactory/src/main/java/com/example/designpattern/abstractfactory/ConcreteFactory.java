@@ -12,7 +12,7 @@ public class ConcreteFactory {
         private  static ConcreteFactory instance = new ConcreteFactory();
     }
 
-    public static ConcreteFactory getInsance(){
+    public static ConcreteFactory getInstance(){
         return SingletonHolder.instance;
     }
 

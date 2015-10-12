@@ -1,6 +1,6 @@
 package com.example.designpattern.abstractfactory;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 
-public class MainActivity extends ActionBarActivity  implements View.OnClickListener {
+public class MainActivity extends Activity implements View.OnClickListener {
 
     private Adapter mAdapter;
     private Button mBtRed;
@@ -27,7 +27,7 @@ public class MainActivity extends ActionBarActivity  implements View.OnClickList
         mBtRed.setOnClickListener(this);
         mBtBlue = (Button)findViewById(R.id.buttonBlue);
         mBtBlue.setOnClickListener(this);
-        mTheme = ConcreteFactory.getInsance().get("red");
+        mTheme = ConcreteFactory.getInstance().get("red");
         setTheme();
     }
 
@@ -51,9 +51,9 @@ public class MainActivity extends ActionBarActivity  implements View.OnClickList
     @Override
     public void onClick(View v) {
         if(v == mBtRed){
-            mTheme = ConcreteFactory.getInsance().get("red");
+            mTheme = ConcreteFactory.getInstance().get("red");
         }else {
-            mTheme = ConcreteFactory.getInsance().get("blue");
+            mTheme = ConcreteFactory.getInstance().get("blue");
         }
         setTheme();
     }
