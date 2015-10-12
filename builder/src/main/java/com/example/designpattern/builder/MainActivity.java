@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 
 
 /**
- * 这是一个创建者模式的例子 把JSON数据解析成不同的展现
+ * 这是一个生成器模式的例子 把JSON数据解析成不同的展现
  */
 public class MainActivity extends Activity implements View.OnClickListener{
 
